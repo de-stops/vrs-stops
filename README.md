@@ -5,7 +5,7 @@ This is a simple script to download all [VRS](https://www.vrsinfo.de) stops as [
 The script uses the following endpoint:
 
 ```
-http://efa.vrr.de/vrr/XSLT_COORD_REQUEST?&jsonp=&boundingBox=&boundingBoxLU={minx}%3A{miny}%3AWGS84%5BDD.DDDDD%5D&boundingBoxRL={maxx}%3A{maxy}%3AWGS84%5BDD.DDDDD%5D&coordOutputFormat=WGS84%5BGGZHTXX%5D&type_1=STOP&outputFormat=json&inclFilter=1
+http://efa.vrr.de/vrrstd/XSLT_COORD_REQUEST?&jsonp=&boundingBox=&boundingBoxLU={minx}%3A{miny}%3AWGS84%5BDD.DDDDD%5D&boundingBoxRL={maxx}%3A{maxy}%3AWGS84%5BDD.DDDDD%5D&coordOutputFormat=WGS84%5BGGZHTXX%5D&type_1=STOP&outputFormat=json&inclFilter=1
 ```
 
 It starts from bounding box `(5, 47, 15, 56)` and works down to smaller quadrants.
@@ -14,7 +14,7 @@ The script produces CSV output in the following format:
 
 ```
 "stop_id","stop_name","stop_lon","stop_lat","stop_code"
-"22005652","Hellenthal, Kehr",6.40848,50.3352,"de:5366:78741"
+"22005147","Roder, Forstweg",6.5312,50.4644,"de:5366:77934"
 ```
 
 # Usage
